@@ -50,5 +50,10 @@ More about Cosine Similarity : [Understanding the Math behind Cosine Similarity]
 5. [List of movies in 2020](https://en.wikipedia.org/wiki/List_of_American_films_of_2020)
 
 # Final Output
+<br>
+![Screenshot (20)](https://github.com/user-attachments/assets/7f760197-0e97-4b90-b659-3a3dc6f3d337)
+<br>
+![Screenshot (21)](https://github.com/user-attachments/assets/6d3250a3-b34a-4870-bb52-0568fcb51d98)
+
 
 
