@@ -26,7 +26,8 @@ API key in your API sidebar once your request is approved.
 7. Hurray! That's it.
 
 # Architecture:
-![Screenshot (17)](https://github.com/user-attachments/assets/30df3251-ba0d-4450-8498-73ed8a84c8a4)
+![Screenshot (17)](https://github.com/user-attachments/assets/b29c48ee-3757-4f9b-b980-f7805cc07fd6)
+
 
 # Similarity Score :
 How does it decide which item is most similar to the item user likes? Here come the similarity scores.
