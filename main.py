@@ -90,10 +90,8 @@ def recommend():
     rec_movies = request.form['rec_movies']
     rec_posters = request.form['rec_posters']
 
-    # get movie suggestions for auto complete
     suggestions = get_suggestions()
 
-    # call the convert_to_list function for every string that needs to be converted to list
     rec_movies = convert_to_list(rec_movies)
     rec_posters = convert_to_list(rec_posters)
     cast_names = convert_to_list(cast_names)
@@ -103,7 +101,6 @@ def recommend():
     cast_bios = convert_to_list(cast_bios)
     cast_places = convert_to_list(cast_places)
     
-    # convert string to list (eg. "[1,2,3]" to [1,2,3])
     cast_ids = cast_ids.split(',')
     cast_ids[0] = cast_ids[0].replace("[","")
     cast_ids[-1] = cast_ids[-1].replace("]","")
