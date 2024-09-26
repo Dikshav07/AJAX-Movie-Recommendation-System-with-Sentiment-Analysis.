@@ -70,7 +70,6 @@ def similarity():
 
 @app.route("/recommend",methods=["POST"])
 def recommend():
-    # getting data from AJAX request
     title = request.form['title']
     cast_ids = request.form['cast_ids']
     cast_names = request.form['cast_names']
