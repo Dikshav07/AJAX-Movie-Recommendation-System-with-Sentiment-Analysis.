@@ -123,16 +123,13 @@ def recommend():
     for reviews in soup_result:
         if reviews.string:
             reviews_list.append(reviews.string)
-            # passing the review to our model
             movie_review_list = np.array([reviews.string])
             movie_vector = vectorizer.transform(movie_review_list)
             pred = clf.predict(movie_vector)
             reviews_status.append('Good' if pred else 'Bad')
 
-    # combining reviews and comments into a dictionary
     movie_reviews = {reviews_list[i]: reviews_status[i] for i in range(len(reviews_list))}     
 
-    # passing all the data to the html file
     return render_template('recommend.html',title=title,poster=poster,overview=overview,vote_average=vote_average,
         vote_count=vote_count,release_date=release_date,runtime=runtime,status=status,genres=genres,
         movie_cards=movie_cards,reviews=movie_reviews,casts=casts,cast_details=cast_details)
