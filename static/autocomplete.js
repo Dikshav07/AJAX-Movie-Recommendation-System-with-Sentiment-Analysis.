@@ -5,8 +5,8 @@ new autoComplete({
     selector: "#autoComplete",           
     threshold: 2,                        
     debounce: 100,                      
-    searchEngine: "strict",              // Search Engine type/mode           | (Optional)
-    resultsList: {                       // Rendered results list object      | (Optional)
+    searchEngine: "strict",             
+    resultsList: {                       
         render: true,
         container: source => {
             source.setAttribute("id", "autoComplete_list");
