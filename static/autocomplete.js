@@ -4,7 +4,7 @@ new autoComplete({
     },
     selector: "#autoComplete",           
     threshold: 2,                        
-    debounce: 100,                       // Post duration for engine to start | (Optional)
+    debounce: 100,                      
     searchEngine: "strict",              // Search Engine type/mode           | (Optional)
     resultsList: {                       // Rendered results list object      | (Optional)
         render: true,
