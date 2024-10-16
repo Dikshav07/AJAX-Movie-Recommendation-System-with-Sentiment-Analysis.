@@ -2,7 +2,7 @@ new autoComplete({
     data: {                              
       src: films,
     },
-    selector: "#autoComplete",           // Input field selector              | (Optional)
+    selector: "#autoComplete",           
     threshold: 2,                        // Min. Chars length to start Engine | (Optional)
     debounce: 100,                       // Post duration for engine to start | (Optional)
     searchEngine: "strict",              // Search Engine type/mode           | (Optional)
