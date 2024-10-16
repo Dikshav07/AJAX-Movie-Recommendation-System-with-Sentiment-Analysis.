@@ -16,7 +16,7 @@ new autoComplete({
         element: "ul"
     },
     maxResults: 5,                         
-    highlight: true,                       // Highlight matching results      | (Optional)
+    highlight: true,                       
     resultItem: {                          // Rendered result item            | (Optional)
         content: (data, source) => {
             source.innerHTML = data.match;
