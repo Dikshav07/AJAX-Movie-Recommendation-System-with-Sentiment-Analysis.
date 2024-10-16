@@ -1,5 +1,5 @@
 new autoComplete({
-    data: {                              // Data src [Array, Function, Async] | (REQUIRED)
+    data: {                              
       src: films,
     },
     selector: "#autoComplete",           // Input field selector              | (Optional)
