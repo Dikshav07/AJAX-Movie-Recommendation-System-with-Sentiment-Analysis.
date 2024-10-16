@@ -17,7 +17,7 @@ new autoComplete({
     },
     maxResults: 5,                         
     highlight: true,                       
-    resultItem: {                          // Rendered result item            | (Optional)
+    resultItem: {                          
         content: (data, source) => {
             source.innerHTML = data.match;
         },
