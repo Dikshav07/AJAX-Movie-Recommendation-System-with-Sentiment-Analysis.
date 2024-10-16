@@ -15,7 +15,7 @@ new autoComplete({
         position: "afterend",
         element: "ul"
     },
-    maxResults: 5,                         // Max. number of rendered results | (Optional)
+    maxResults: 5,                         
     highlight: true,                       // Highlight matching results      | (Optional)
     resultItem: {                          // Rendered result item            | (Optional)
         content: (data, source) => {
@@ -23,14 +23,14 @@ new autoComplete({
         },
         element: "li"
     },
-    noResults: () => {                     // Action script on noResults      | (Optional)
+    noResults: () => {                     
         const result = document.createElement("li");
         result.setAttribute("class", "no_result");
         result.setAttribute("tabindex", "1");
         result.innerHTML = "No Results";
         document.querySelector("#autoComplete_list").appendChild(result);
     },
-    onSelection: feedback => {             // Action script onSelection event | (Optional)
+    onSelection: feedback => {             
         document.getElementById('autoComplete').value = feedback.selection.value;
     }
 });
